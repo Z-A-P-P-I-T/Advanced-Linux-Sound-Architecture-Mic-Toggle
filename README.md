@@ -1,2 +1,5 @@
 # Advanced-Linux-Sound-Architecture-Mic-Toggle
-Just a simple script for toggeling your microphone on and off
+Here is a very short script that might come in handy if you wan't to quickly be able to disable/enable your microphone.
+
+Since Alsa subsides under Pulse there is no way to add a On/Off functionality without using the Alsa toggle.
+Remember to give the shellscript permissions by chmod +x.
