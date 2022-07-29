@@ -22,3 +22,5 @@ echo
 sleep 3
 
 exit
+
+#obsolete since 2022 - blacklist the drivers instead!!!!
