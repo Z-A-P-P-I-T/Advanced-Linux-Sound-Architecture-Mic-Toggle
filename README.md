@@ -7,4 +7,9 @@ Usage:
 
 chmod +x endimic.sh
 
-sudo ./endimic.sh
+./endimic.sh -o on
+It will set microphone state to on.
+
+
+./endimic.sh 
+It will toggle the microphone's state.
