@@ -2,6 +2,8 @@
 
 A privacy-first Linux microphone control tool that mutes all physical mics and routes apps to a safe loopback source. It includes an audible trust test, loopback verification, and a simple interactive menu.
 
+![Endimic CLI](assets/cli.png)
+
 ## Features
 
 - **Mute all physical mics** when set to off (internal + external)
