@@ -111,6 +111,27 @@ Endimic creates:
 - In privacy mode (`LOOPBACK_MODE="null"`), the loopback is fed from a **private null sink**. Apps hear silence/noise, not your mic or system audio.
 - Audible playback is optional and only used to build trust that the test ran.
 
+### White Noise Behavior (What Happens in Each Mode)
+
+Endimic uses white noise in two separate ways:
+
+- **Audible trust test**: Plays white noise through your speakers so you can hear that the test ran.
+- **Loopback verification**: Sends white noise into the loopback source so apps receive a safe signal instead of mic audio.
+
+When the mic is **muted (privacy mode)**:
+- Physical mics are muted (`AUTO_MUTE_ALL_SOURCES=true`).
+- The default input is set to `endimic_loopback`.
+- In `LOOPBACK_MODE="null"`, the loopback is fed from a private null sink.
+- White noise (for verification) is injected into that null sink so apps hear safe noise, not your mic or system audio.
+
+When the mic is **enabled**:
+- Physical mics can be unmuted and used normally.
+- The audible white-noise test still plays through speakers for trust verification.
+- If you opt in, Endimic can briefly unmute a physical mic for verification and then re-mute it.
+
+Key point: **White noise is not injected into the physical mic hardware.**  
+Privacy comes from muting physical mics and routing apps to a safe loopback source.
+
 ### How It Works (Short)
 
 1. Mutes all physical microphone sources (internal + external).
