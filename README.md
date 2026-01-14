@@ -41,6 +41,7 @@ sudo pacman -S alsa-utils pulseaudio
 ```
 
 The installer detects your package manager, installs dependencies, and makes `endimic.sh` executable.
+`endimic.sh` itself does not install packages.
 
 ### Manual Install Endimic
 
