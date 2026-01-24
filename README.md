@@ -183,7 +183,7 @@ Check your ALSA configuration and ensure your microphone is properly connected.
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) file for details.
+Apache 2.0 License - See [LICENSE](LICENSE) file for details.
 
 ## Contributing
 

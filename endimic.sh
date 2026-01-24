@@ -2784,7 +2784,7 @@ show_version_info() {
     cat << EOF
 endimic.sh - Version $VERSION
 Author: $AUTHOR
-License: MIT
+License: Apache-2.0
 
 An advanced ALSA microphone control utility with security features:
 - Microphone state management (on/off/toggle)
